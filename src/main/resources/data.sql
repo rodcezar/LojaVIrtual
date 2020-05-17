@@ -1,5 +1,5 @@
-INSERT INTO student(name, amount) values ('Torradeira',10);
-INSERT INTO student(name, amount) values ('Carro',10);
-INSERT INTO student(name, amount) values ('CD do Krisiun',10);
-INSERT INTO student(name, amount) values ('Biscoito', 10);
-INSERT INTO student(name, amount) values ('Passagem aerea', 10);
+INSERT INTO produto(birth_date, name, email, amount) values ('2001-01-01', 'Marcelino Lund','marcelino@email.com', 10);
+INSERT INTO produto(birth_date, name, email, amount) values ('2001-02-10', 'Malorie Hawkes','malorie@email.com', 10);
+INSERT INTO produto(birth_date, name, email, amount) values ('2000-03-09', 'Kara Eckel','kara@email.com', 10);
+INSERT INTO produto(birth_date, name, email, amount) values ('2001-05-29', 'Gwen Culpepper','gwen@email.com', 10);
+INSERT INTO produto(birth_date, name, email, amount) values ('2000-04-12', 'Ingrid Palmer','dennis@email.com', 10);

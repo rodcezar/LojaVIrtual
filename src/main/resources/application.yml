@@ -15,4 +15,4 @@ spring:
       ddl-auto: none
 
 logging:
-  file: application.logx
+  file: application.log
