@@ -1,0 +1,222 @@
+2020-05-16 20:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUCT` ( `ID` INT NOT NULL AUTO_INCREMENT, `NAME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `product` ( `id` int NOT NULL AUTO_INCREMENT, `name` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 20:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 20:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 20:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 20:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 20:57:18 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 21:13:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUCT` ( `ID` INT NOT NULL AUTO_INCREMENT, `NAME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `product` ( `id` int NOT NULL AUTO_INCREMENT, `name` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 21:13:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 21:13:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 21:13:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 21:13:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 21:13:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 21:53:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUCT` ( `ID` INT NOT NULL AUTO_INCREMENT, `NAME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `product` ( `id` int NOT NULL AUTO_INCREMENT, `name` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 21:53:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 21:53:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 21:53:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 21:53:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 21:53:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 21:57:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 21:57:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 21:57:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 21:57:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 21:57:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 21:57:10 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:04:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:04:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:04:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:04:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:04:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:04:27 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:05:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:06:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUTO" not found; SQL statement:
+select produto0_.id as id1_0_, produto0_.nome as nome2_0_, produto0_.quantidade as quantida3_0_ from produto produto0_ [42102-200]
+2020-05-16 22:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:07:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:09:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:09:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:09:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:09:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:09:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:09:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:09:39 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:10:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:10:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:10:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:10:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:10:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:10:12 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:10:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:10:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:10:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:10:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:10:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:10:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:10:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS `PRODUTO` ( `ID` INT NOT NULL AUTO_INCREMENT, `NOME` VARCHAR(50) NOT NULL, `AMOUNT` INT NOT NULL PRIMARY KEY([*]`ID`), UNIQUE(`NAME`) ) ENGINE=INNODB DEFAULT CHARSET=UTF8"; expected "HASH, AUTO_INCREMENT, NOT, NULL, COMMENT, CHECK, REFERENCES, ,, )"; SQL statement:
+CREATE TABLE IF NOT EXISTS `Produto` ( `id` int NOT NULL AUTO_INCREMENT, `nome` varchar(50) NOT NULL, `amount` int NOT NULL PRIMARY KEY(`id`), UNIQUE(`name`) ) engine=InnoDB default charset=utf8 [42001-200]
+2020-05-16 22:10:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Torradeira',10) [42102-200]
+2020-05-16 22:10:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Carro',10) [42102-200]
+2020-05-16 22:10:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('CD do Krisiun',10) [42102-200]
+2020-05-16 22:10:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Biscoito', 10) [42102-200]
+2020-05-16 22:10:58 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found; SQL statement:
+INSERT INTO student(name, amount) values ('Passagem aerea', 10) [42102-200]
+2020-05-16 22:11:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "PRODUTO" not found; SQL statement:
+select produto0_.id as id1_0_, produto0_.nome as nome2_0_, produto0_.quantidade as quantida3_0_ from produto produto0_ [42102-200]
