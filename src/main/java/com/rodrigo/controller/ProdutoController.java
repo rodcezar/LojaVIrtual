@@ -103,7 +103,7 @@ public class ProdutoController {
 	  @RequestParam(name = "name") String name) {
     List<Produto> produtos = service.findProdutosWithPartOfName(name);
 
-    LOGGER.info(String.format("getAllProdutosWithPartName() with fromDate [%s] and toDate [%s] returned %s records", name, produtos.size()));
+    LOGGER.info(String.format("getAllProdutosWithPartName() with name [%s] returned %s records", name, produtos.size()));
     
     return produtos.stream().map(produto -> convertToDTO(produto)).collect(Collectors.toList());
   } 
