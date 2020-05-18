@@ -3,7 +3,7 @@ package com.rodrigo.exception;
 /**
  * Exception class that is thrown when it's not possible to find a resource.
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 public class ResourceNotFoundException extends RuntimeException {

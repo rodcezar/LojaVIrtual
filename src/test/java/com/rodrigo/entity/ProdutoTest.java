@@ -44,8 +44,7 @@ public class ProdutoTest {
     Produto produtoTwo = new Produto();
     produtoTwo.setId(2);
     produtoTwo.setName(produto.getName());
-    produtoTwo.setEmail(produto.getEmail());
-    produtoTwo.setBirthDate(produto.getBirthDate());
+    produtoTwo.setAmount(produto.getAmount());
     
     assertFalse(produto.equals(produtoTwo));
     assertFalse(produto.hashCode() == produtoTwo.hashCode());
@@ -56,32 +55,7 @@ public class ProdutoTest {
     Produto produtoTwo = new Produto();
     produtoTwo.setId(produto.getId());
     produtoTwo.setName("other rodrigo");
-    produtoTwo.setEmail(produto.getEmail());
-    produtoTwo.setBirthDate(produto.getBirthDate());
-    
-    assertFalse(produto.equals(produtoTwo));
-    assertFalse(produto.hashCode() == produtoTwo.hashCode());
-  }
-  
-  @Test
-  public void whenTwoProdutoObjectsHaveDifferentEmails_thenReturnsFalse() {
-    Produto produtoTwo = new Produto();
-    produtoTwo.setId(produto.getId());
-    produtoTwo.setName(produto.getName());
-    produtoTwo.setEmail("other_email@email.com");
-    produtoTwo.setBirthDate(produto.getBirthDate());
-    
-    assertFalse(produto.equals(produtoTwo));
-    assertFalse(produto.hashCode() == produtoTwo.hashCode());
-  }
-  
-  @Test
-  public void whenTwoProdutoObjectsHaveDifferentBirthDates_thenReturnsFalse() {
-    Produto produtoTwo = new Produto();
-    produtoTwo.setId(produto.getId());
-    produtoTwo.setName(produto.getName());
-    produtoTwo.setEmail(produto.getEmail());
-    produtoTwo.setBirthDate(LocalDate.parse("2000-02-02"));
+    produtoTwo.setAmount(produto.getAmount());
     
     assertFalse(produto.equals(produtoTwo));
     assertFalse(produto.hashCode() == produtoTwo.hashCode());
@@ -98,13 +72,11 @@ public class ProdutoTest {
   }
   
   private Produto buildProduto() {
-    LocalDate birthDate = LocalDate.parse("2000-01-01");
     
     Produto produto = new Produto();
     produto.setId(1);
-    produto.setName("rodrigo");
-    produto.setEmail("rodrigo@email.com");
-    produto.setBirthDate(birthDate);
+    produto.setName("CD do Krisiun");
+    produto.setAmount(99);
     
     return produto;
   }

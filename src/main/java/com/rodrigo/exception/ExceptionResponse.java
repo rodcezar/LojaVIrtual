@@ -7,7 +7,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 /**
  * This class holds information of a given exception.
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)

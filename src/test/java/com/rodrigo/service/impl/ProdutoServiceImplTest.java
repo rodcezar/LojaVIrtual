@@ -47,8 +47,6 @@ public class ProdutoServiceImplTest {
   public void setUp() {
     Mockito.when(repository.findById(EXISTENT_STUDENT_ID)).thenReturn(buildProduto());
     
-    Mockito.when(repository.findAllProdutosBornBetween(FROM_DATE, TO_DATE)).thenReturn(buildProdutoList());
-    
     Mockito.when(repository.findProdutosWithPartOfName(NAME)).thenReturn(buildProdutoList());
     
     Mockito.when(repository.findAll()).thenReturn(buildProdutoList());
@@ -65,11 +63,6 @@ public class ProdutoServiceImplTest {
   @Test
   public void whenFindingProdutoByExistingId_thenReturnProduto() {
     assertNotNull(service.findById(EXISTENT_STUDENT_ID));
-  }
-  
-  @Test
-  public void whenFindingProdutosByBirthDateBetween_thenReturnProdutoList() {
-    assertEquals(2, service.findByBirthDateBetween(FROM_DATE, TO_DATE).size());
   }
   
   @Test
@@ -105,8 +98,7 @@ public class ProdutoServiceImplTest {
     
     produto.setId(EXISTENT_STUDENT_ID);
     produto.setName("Rodrigo");
-    produto.setEmail("rodrigo.cezar@email.com");
-    produto.setBirthDate(LocalDate.parse("1980-04-22"));
+    produto.setAmount(87);
     
     return Optional.of(produto);
   }

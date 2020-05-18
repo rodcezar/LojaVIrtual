@@ -24,7 +24,7 @@ public class ProdutoServiceImpl implements ProdutoService {
   ProdutoRepository repository;
 
   /* (non-Javadoc)
-   * @see com.tiago.service.ProdutoService#findById(java.lang.Long)
+   * @see com.rodrigo.service.ProdutoService#findById(java.lang.Long)
    */
   @Override
   public Produto findById(Integer id) {
@@ -38,15 +38,7 @@ public class ProdutoServiceImpl implements ProdutoService {
   }
 
   /* (non-Javadoc)
-   * @see com.tiago.service.ProdutoService#findByBirthDateBetween(java.time.LocalDate, java.time.LocalDate)
-   */
-  @Override
-  public List<Produto> findByBirthDateBetween(LocalDate fromDate, LocalDate toDate) {
-    return repository.findAllProdutosBornBetween(fromDate, toDate);
-  }
-
-  /* (non-Javadoc)
-   * @see com.tiago.service.ProdutoService#findByBirthDateBetween(java.time.LocalDate, java.time.LocalDate)
+   * @see com.rodrigo.service.ProdutoService#findProdutosWithPartOfName(String)
    */
   @Override
   public List<Produto> findProdutosWithPartOfName(String name) {
@@ -54,7 +46,7 @@ public class ProdutoServiceImpl implements ProdutoService {
   } 
   
   /* (non-Javadoc)
-   * @see com.tiago.service.ProdutoService#findAll()
+   * @see com.rodrigo.service.ProdutoService#findAll()
    */
   @Override
   public List<Produto> findAll() {
@@ -62,7 +54,7 @@ public class ProdutoServiceImpl implements ProdutoService {
   }
 
   /* (non-Javadoc)
-   * @see com.tiago.service.ProdutoService#save(com.tiago.entity.Produto)
+   * @see com.rodrigo.service.ProdutoService#save(com.rodrigo.entity.Produto)
    */
   @Override
   public Produto save(Produto produto) {
@@ -70,7 +62,7 @@ public class ProdutoServiceImpl implements ProdutoService {
   }
 
   /* (non-Javadoc)
-   * @see com.tiago.service.ProdutoService#delete(java.lang.Long)
+   * @see com.rodrigo.service.ProdutoService#delete(java.lang.Long)
    */
   @Override
   public void delete(Integer id) {
@@ -78,4 +70,10 @@ public class ProdutoServiceImpl implements ProdutoService {
     
     repository.delete(produto);
   }
+
+@Override
+public int buyProduto(Integer id) {
+	return repository.buyProduto(id);
+	
+	}
 }

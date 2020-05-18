@@ -2,7 +2,6 @@ package com.rodrigo.repository;
 
 import static org.junit.Assert.assertEquals;
 
-import java.time.LocalDate;
 import java.util.List;
 
 import org.junit.Test;
@@ -23,10 +22,8 @@ public class ProdutoRepositoryTest {
   
   @Test
   public void whenTwoProdutosMeetTheCriteria_thenReturnProdutoList() {
-    LocalDate fromDate = LocalDate.parse("2001-01-01");
-    LocalDate toDate = LocalDate.parse("2001-03-01");
-    
-    List<Produto> produtos = repository.findAllProdutosBornBetween(fromDate, toDate);
+
+    List<Produto> produtos = repository.findProdutosWithPartOfName("Ma");
     
     assertEquals(2, produtos.size());
   }

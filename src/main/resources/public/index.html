@@ -1,0 +1,27 @@
+<!doctype html>
+<html ng-app="demo">
+	
+	<head>
+		<title>Loja Virtual</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    	<script src="hello.js"></script>
+	</head>
+
+	<body>
+		
+		<div ng-controller="Hello">
+		  Total {{produtos.length}} produtos:
+		  <input type="search" ng-model="q" placeholder="filter friends..." aria-label="nome" />
+		  <ul>
+		    <li ng-repeat="produto in produtos | filter:q as results track by produto.name">
+		      [{{produto.id}}] {{produto.name}} - Quantidade: {{produto.amount}}.
+		    </li>
+		    <li class="animate-repeat" ng-if="results.length === 0">
+		      <strong>No results found...</strong>
+		    </li>
+		  </ul>
+		</div>
+		
+
+	</body>
+</html>

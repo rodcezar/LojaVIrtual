@@ -23,10 +23,6 @@ public class Produto {
 
   private String name;
   
-  private String email;
-  
-  private LocalDate birthDate;
-  
   private Integer amount;
 
   public Integer getId() {
@@ -45,25 +41,9 @@ public class Produto {
     this.name = name;
   }
 
-  public String getEmail() {
-    return email;
-  }
-
-  public void setEmail(String email) {
-    this.email = email;
-  }
-
-  public LocalDate getBirthDate() {
-    return birthDate;
-  }
-
-  public void setBirthDate(LocalDate birthDate) {
-    this.birthDate = birthDate;
-  }
-  
   public Integer getAmount() {
-	    return amount;
-	  }
+    return amount;
+  }
 
   public void setAmount(Integer amount) {
     this.amount = amount;
@@ -81,8 +61,7 @@ public class Produto {
 
     return Objects.equals(getId(), produto.getId())
       && Objects.equals(getName(), produto.getName())
-      && Objects.equals(getEmail(), produto.getEmail())
-      && Objects.equals(getBirthDate(), produto.getBirthDate());
+      && Objects.equals(getAmount(), produto.getAmount());
   }
 
   @Override
@@ -91,8 +70,6 @@ public class Produto {
     
     hash = 31 * hash + Objects.hashCode(id);
     hash = 31 * hash + Objects.hashCode(name);
-    hash = 31 * hash + Objects.hashCode(email);
-    hash = 31 * hash + Objects.hashCode(birthDate);
     hash = 31 * hash + Objects.hashCode(amount);
     return hash;
   }

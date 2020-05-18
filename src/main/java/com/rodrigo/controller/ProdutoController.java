@@ -1,6 +1,5 @@
 package com.rodrigo.controller;
 
-import java.time.LocalDate;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -10,7 +9,6 @@ import org.modelmapper.ModelMapper;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -29,7 +27,7 @@ import com.rodrigo.service.ProdutoService;
 /**
  * Restful controller responsible for managing produtos
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 @RestController
@@ -58,23 +56,12 @@ public class ProdutoController {
     return produtos.stream().map(produto -> convertToDTO(produto)).collect(Collectors.toList());
   }
   
-  /**
-   * Get all produtos that were born between the desired date range
-   * 
-   * @param fromDate
-   * @param toDate
-   * @return the list of produtos
-   */
-  @GetMapping(path = "/produtos/bornBetween")
-  public List<ProdutoDTO> getAllProdutosThatWereBornBetween(
-      @RequestParam(value = "fromDate") @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate fromDate,
-      @RequestParam(value = "toDate") @DateTimeFormat(pattern = "yyyy-MM-dd") LocalDate toDate) {
-    List<Produto> produtos = service.findByBirthDateBetween(fromDate, toDate);
-
-    LOGGER.info(String.format("getAllProdutosThatWereBornBetween() with fromDate [%s] and toDate [%s] returned %s records", fromDate, toDate, produtos.size()));
-    
-    return produtos.stream().map(produto -> convertToDTO(produto)).collect(Collectors.toList());
-  }
+  @RequestMapping("/produtos/teste")
+  public String teste() {
+   
+    return "Funcionou!";
+  }  
+ 
 
   /**
    * Creates a produto
@@ -92,10 +79,9 @@ public class ProdutoController {
   }
   
   /**
-   * Get all produtos that were born between the desired date range
+   * Get all produtos with name like %name
    * 
-   * @param fromDate
-   * @param toDate
+   * @param name
    * @return the list of produtos
    */
   @GetMapping(path = "/produtos/name")
@@ -119,12 +105,39 @@ public class ProdutoController {
   public ProdutoDTO updateProduto(@PathVariable(value = "id", required = true) Integer produtoId, 
       @Valid @RequestBody ProdutoDTO produtoDTO) {
     produtoDTO.setId(produtoId);
-    Produto produto = convertToEntity(produtoDTO);
+    Produto produto = convertToEntity(produtoDTO);	
 
     LOGGER.info(String.format("updateProduto() called with id [%s]", produtoId));
     
     return convertToDTO(service.save(produto));
   }
+  
+  /**
+   * Updates a produto
+   * 
+   * @param produtoId
+   * @param produtoDTO
+   * @return the updated produto
+   
+  @PutMapping("/produto/buy/{id}")
+  public Produto buyProduto(@Valid @RequestBody ProdutoDTO produtoDTO, @PathVariable Integer produtoId) {	
+    
+	  Integer produtoAtualizadoOK = service.buyProduto(produtoId);
+	   return repository.findById(produtoId)
+	    	      .map(employee -> {
+	    	        employee.setName(newEmployee.getName());
+	    	        employee.setRole(newEmployee.getRole());
+	    	        return repository.save(employee);
+	    	      })
+	    	      .orElseGet(() -> {
+	    	        newEmployee.setId(id);
+	    	        return repository.save(newEmployee);
+	    	      });
+
+    LOGGER.info(String.format("buyProduto() called with id [%s]", produtoId));
+    
+    return;
+  } **/
   
   /**
    * Deletes a produto
