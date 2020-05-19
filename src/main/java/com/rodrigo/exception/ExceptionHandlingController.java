@@ -18,7 +18,7 @@ import com.rodrigo.util.ValidationUtil;
 /**
  * This class handles the exceptions thrown by the controller layer.
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 @ControllerAdvice

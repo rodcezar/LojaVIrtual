@@ -8,7 +8,7 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 /**
  * DTO with Produto information.
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)

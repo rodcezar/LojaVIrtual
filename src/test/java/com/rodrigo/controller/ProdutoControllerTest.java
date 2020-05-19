@@ -36,14 +36,14 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
-import com.rodrigo.CrudExceptionhandlingExampleApplication;
+import com.rodrigo.LojaVirtualApplicaton;
 import com.rodrigo.dto.ProdutoDTO;
 import com.rodrigo.entity.Produto;
 import com.rodrigo.exception.ResourceNotFoundException;
 import com.rodrigo.service.ProdutoService;
 
 @RunWith(SpringRunner.class)
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK, classes = CrudExceptionhandlingExampleApplication.class)
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK, classes = LojaVirtualApplicaton.class)
 @AutoConfigureMockMvc
 @AutoConfigureTestDatabase
 public class ProdutoControllerTest {

@@ -11,7 +11,7 @@ import com.rodrigo.exception.ExceptionHandlingController;
 /**
  * Utility class used in {@link ExceptionHandlingController} to build errors.
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 public class ValidationUtil {

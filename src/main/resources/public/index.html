@@ -5,7 +5,7 @@
 table, th , td {
   border: 1px solid grey;
   border-collapse: collapse;
-  padding: 5px;
+  padding: 10px;
 }
 
 table tr:nth-child(odd) {
@@ -29,7 +29,7 @@ table tr:nth-child(even) {
 		<div ng-controller="Hello">
 		  Total {{produtos.length}} produtos:
 	  
-	        <table class="table shipwrecktable">
+	        <table>
 	            <tr>
 	                <th>Product Id</th>
 	                <th>Name</th>
@@ -42,8 +42,7 @@ table tr:nth-child(even) {
 	                    <td>{{p.name}}</td>
 	                    <td>{{p.amount}}</td>
 	                    <td>
-			              <a class="btn btn-primary" ui-sref="viewShipwreck({id:shipwreck.id})">View</a>
-			              <a class="btn btn-danger"  ng-click="deleteShipwreck(shipwreck)">Delete</a>
+			              <i class="fa fa-trash" aria-hidden="true"></i>
 						</td>
                     </tr>
 	            </tbody>

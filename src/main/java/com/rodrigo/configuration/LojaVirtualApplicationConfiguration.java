@@ -7,11 +7,11 @@ import org.springframework.context.annotation.Configuration;
 /**
  * Configuration class that makes possible to inject the beans listed here.
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 @Configuration
-public class CrudExceptionhandlingExampleApplicationConfiguration {
+public class LojaVirtualApplicationConfiguration {
 
   @Bean
   public ModelMapper modelMapper() {

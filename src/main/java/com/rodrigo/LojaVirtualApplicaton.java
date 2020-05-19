@@ -6,14 +6,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 /**
  * This is the main spring boot application class.
  * 
- * @author Tiago Melo (tiagoharris@gmail.com)
+ * @author Rodrigo Cezar (rodrigo.cezar@gmail.com)
  *
  */
 @SpringBootApplication
-public class CrudExceptionhandlingExampleApplication {
+public class LojaVirtualApplicaton {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CrudExceptionhandlingExampleApplication.class, args);
+		SpringApplication.run(LojaVirtualApplicaton.class, args);
 	}
 
 }
