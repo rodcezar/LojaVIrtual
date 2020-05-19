@@ -75,7 +75,7 @@ spring:
 
 * Definindo 'url' como 'jdbc: h2: file: ./db / crud', estamos dizendo ao H2 que persistiremos a base no disco, e não na memória. O arquivo do banco de dados será armazenado em 'db / crud';
 * Importante: estamos usando o JPA e inicializando nosso banco de dados via scripts SQL, portanto, não queremos que o Hibernate gere o DDL, é por isso que estamos definindo 'ddl-auto' como 'none'.
-* Os unit tests usarão um banco de dados na memória -> 'src / test / resources / application.yml':
+* Os testes unitários usarão um banco de dados na memória (não irá persistir no disco) -> 'src / test / resources / application.yml':
 
 ```
 spring:
@@ -90,3 +90,70 @@ spring:
       ddl-auto: create-drop
 
 ```
+
+Para inicializar nosso banco de dados de teste, definimos um arquivo chamado import.sql na pasta 'src / test / resources':
+
+```
+
+INSERT INTO produto(name, amount) values ('Torradeira1', 20);
+INSERT INTO produto(name, amount) values ('Maquina de lavar1', 10);
+INSERT INTO produto(name, amount) values ('Martelo1', 20);
+INSERT INTO produto(name, amount) values ('Cafeteira1', 20);
+INSERT INTO produto(name, amount) values ('Celta 20061', 20);
+
+```
+
+Após a criação do projeto e inicialização do banco de dados, foi desenvolvida a api RESTful que implementa o CRUD para gerenciar produtos. Segue uma visão do projeto no Eclipse. 
+
+![Árvore do projetot](https://github.com/rodcezar/lojavirtual/blob/master/src/main/resources/public/images/project.png)
+
+Para testar suas funcionalidades, basta baixar ou clonar o projeto no github.
+
+Agora, vamos às funcionalidades:
+
+* GET /api/produtos: retorna uma lista de produtos;
+* GET /produtos/name/name?{string}: retorna uma lista de produtos que comecem com a substring;
+* POST /api/produto: Cria um produto a partir de um JSON no bodyRequest;
+* PUT /api/produto/{id}: atualiza um produto com o ID fornecido em um JSON no bodyRequest;
+* DELETE /api/produto/{id}: exclui um produto com o ID fornecido.
+
+Vamos usar [curl](https://curl.haxx.se/) para testar:
+
+Primeiramente, inicializar o servidor:
+
+
+```
+C:\SpringBoot\lojavirtual>mvn spring-boot:run   
+```
+*Ambiente windows
+
+
+# Testando GET API/PRODUTOS 
+
+```
+curl -v "http://localhost:8080/api/produtos"
+```
+
+* Resultado no prompt de comando
+
+![resultado no prompt de comando](https://github.com/rodcezar/lojavirtual/blob/master/src/main/resources/public/images/curl_teste_01.png)
+
+* Resultado em um client HTML/Angular (ainda incompleto), que faz parte do projeto:
+
+![CLient Angular](https://github.com/rodcezar/lojavirtual/blob/master/src/main/resources/public/images/client_angular.png)
+
+Algumas outras URL's para teste:
+
+```
+curl -v "http://localhost:8080/api/produtos/name?name=Ma"
+```
+
+Testando o POST /api/produto:
+
+```
+
+curl -v -H "Content-Type: application/json" -X POST "http://localhost:8080/api/produto" -d '{"name":"NintendoSwitch", "amount":1}'
+
+```
+
+etc... 
